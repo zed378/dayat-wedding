@@ -35,18 +35,18 @@ export default function Home() {
 
       {open && (
         <div className="bg-black w-full h-screen opening flex flex-col justify-center items-center gap-2">
-          <h1 className="text-2xl text-pink-500">Undangan pernikahan</h1>
-          <h2 className="pacifico text-pink-500 text-[3.5rem]">
+          <h1 className="text-2xl text-pink-500 px-2">Undangan pernikahan</h1>
+          <h2 className="pacifico text-pink-500 text-[3.5rem] text-center px-2">
             Dayat dan Lubena
           </h2>
-          <h1 className="text-2xl text-pink-500 mt-9">
+          <h1 className="text-2xl text-pink-500 mt-9 px-2">
             Kepada Yth. Bapak/Ibu/Saudara/i:
           </h1>
-          <div className="capitalize satisfy text-pink-500 text-4xl text-center">
+          <div className="capitalize satisfy text-pink-500 text-4xl text-center px-2">
             {name?.query?.to}
           </div>
 
-          <div className="text-center mt-4 text-sm">
+          <div className="text-center mt-4 text-sm px-2">
             <p>
               Tanpa mengurangi rasa hormat, kami bermaksud mengundang Anda untuk
               menghadiri acara pernikahan kami.

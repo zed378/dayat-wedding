@@ -107,7 +107,7 @@ export default function Home() {
       </Head>
 
       <div className="hidden">
-        <audio src={music} autoPlay loop />
+        <audio src={music} autoPlay loop id="music" />
       </div>
 
       {open && (
@@ -136,7 +136,7 @@ export default function Home() {
             className="bg-pink-600 px-6 py-3 rounded-xl text-white text-xl font-bold hover:bg-pink-800 mt-6"
             onClick={() => {
               setOpen(false);
-              setPlay(true);
+              document.getElementById("music").play();
             }}
           >
             Buka Undangan

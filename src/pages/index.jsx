@@ -47,7 +47,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full px-3 z-10">
             <div className="text-center text-pink-500 mb-3">
               <h1>Akad nikah akan dilaksanakan pada:</h1>
-              <h1 className="text-2xl">Jum'at, 12 Mei 2023</h1>
+              <h1 className="text-2xl">Jumat, 12 Mei 2023</h1>
             </div>
 
             <div className="w-full p-2 grid gap-2 md:grid-cols-4 grid-cols-2">

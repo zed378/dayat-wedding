@@ -5,8 +5,6 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
 // components
-import AudioPlayer from "react-h5-audio-player";
-import "react-h5-audio-player/lib/styles.css";
 
 // assets
 import tr from "../../public/tr.webp";
@@ -62,19 +60,19 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
             </div>
 
             <div className="w-full p-2 grid gap-2 md:grid-cols-4 grid-cols-2">
-              <div className="bg-pink-500 text-white flex flex-col justify-center items-center h-[100px] md:h-[200px]">
+              <div className="bg-pink-500 text-white flex flex-col justify-center items-center h-[100px] md:h-[200px] rounded-md">
                 <h1 className="text-4xl md:text-[4rem] mb-2">{days}</h1>
                 <h2 className="md:text-4xl">Hari</h2>
               </div>
-              <div className="bg-pink-600 text-white flex flex-col justify-center items-center h-[100px] md:h-[200px]">
+              <div className="bg-pink-600 text-white flex flex-col justify-center items-center h-[100px] md:h-[200px] rounded-md">
                 <h1 className="text-4xl md:text-[4rem] mb-2">{hours}</h1>
                 <h2 className="md:text-4xl">Jam</h2>
               </div>
-              <div className="bg-pink-600 md:bg-pink-500 text-white flex flex-col justify-center items-center h-[100px] md:h-[200px]">
+              <div className="bg-pink-600 md:bg-pink-500 text-white flex flex-col justify-center items-center h-[100px] md:h-[200px] rounded-md">
                 <h1 className="text-4xl md:text-[4rem] mb-2">{minutes}</h1>
                 <h2 className="md:text-4xl">Menit</h2>
               </div>
-              <div className="bg-pink-500 md:bg-pink-600 text-white flex flex-col justify-center items-center h-[100px] md:h-[200px]">
+              <div className="bg-pink-500 md:bg-pink-600 text-white flex flex-col justify-center items-center h-[100px] md:h-[200px] rounded-md">
                 <h1 className="text-4xl md:text-[4rem] mb-2">{seconds}</h1>
                 <h2 className="md:text-4xl">Detik</h2>
               </div>
@@ -109,7 +107,7 @@ export default function Home() {
       </Head>
 
       <div className="hidden">
-        <AudioPlayer src={music} autoPlay loop />
+        <audio src={music} autoPlay loop />
       </div>
 
       {open && (

@@ -42,7 +42,7 @@ export default function Home() {
           <h1 className="text-2xl text-pink-500 mt-9">
             Kepada Yth. Bapak/Ibu/Saudara/i:
           </h1>
-          <div className="capitalize satisfy text-pink-500 text-4xl">
+          <div className="capitalize satisfy text-pink-500 text-4xl text-center">
             {name?.query?.to}
           </div>
 

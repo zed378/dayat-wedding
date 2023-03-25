@@ -25,12 +25,19 @@ body {
   overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none;
 }
 
 .opening {
   background-image: url("../../public/bg.jpg");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.akad {
+  background-image: url("../../public/bg.webp");
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,4 +49,38 @@ body::-webkit-scrollbar {
 
 .satisfy {
   font-family: satisfy;
+}
+
+.pulsate-fwd {
+  -webkit-animation: pulsate-fwd 3s ease-in-out infinite both;
+  animation: pulsate-fwd 3s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }

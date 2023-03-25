@@ -27,7 +27,10 @@ export default function AkadScreen() {
           <p className="md:text-2xl 2xl:text-4xl mb-2">
             Akad nikah akan dilaksanakan pada:
           </p>
-          <p className="text-2xl md:text-[2rem]">Jumat, 12 Mei 2023</p>
+          <p className="text-xl md:text-[2rem] font-bold mb-2">
+            Jumat, 12 Mei 2023
+          </p>
+          <p className="text-xl md:text-[2rem]">Pukul 09.00 WIB</p>
         </div>
 
         <Countdown date={akad} renderer={Count} />

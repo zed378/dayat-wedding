@@ -1,7 +1,7 @@
 export function Qutoes1() {
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center px-5 italic relative z-10">
-      <div className="rounded-lg bg-slate-200 text-pink-500 p-5 flex flex-col justify-center items-center gap-2 md:w-2/5 md:text-3xl md:gap-4 font-light">
+      <div className="rounded-lg bg-[#ff54c680] text-white p-5 flex flex-col justify-center items-center gap-2 md:w-2/5 md:text-3xl md:gap-4 font-light">
         <p className="text-center">
           Dan di antara tanda-tanda kekuasaan-Nya diciptakan-Nya untukmu
           pasangan hidup dari jenismu sendiri supaya kamu dapat ketenangan hati
@@ -18,7 +18,7 @@ export function Qutoes1() {
 export function Qutoes2() {
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center px-5 italic relative z-10">
-      <div className="rounded-lg bg-slate-200 text-pink-500 p-5 flex flex-col justify-center items-center gap-2 md:w-2/5 md:text-3xl md:gap-4 font-light">
+      <div className="rounded-lg bg-[#ff54c680] text-white p-5 flex flex-col justify-center items-center gap-2 md:w-2/5 md:text-3xl md:gap-4 font-light">
         <p className="text-center">
           Dan segala sesuatu Kami Ciptakan Berpasang-pasangan supaya kamu
           mengingat kebesaran Allah.
@@ -32,7 +32,7 @@ export function Qutoes2() {
 export function Qutoes3() {
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center px-5 italic relative z-10">
-      <div className="rounded-lg bg-slate-200 text-pink-500 p-5 flex flex-col justify-center items-center gap-2 md:w-2/5 md:text-3xl md:gap-4 font-light">
+      <div className="rounded-lg bg-[#ff54c680] text-white p-5 flex flex-col justify-center items-center gap-2 md:w-2/5 md:text-3xl md:gap-4 font-light">
         <p className="text-center">
           Bagaimana kamu akan mengambilnya kembali, padahal sebagian kamu telah
           bergaul (bercampur) dengan yang lain sebagai suami-isteri. Dan mereka
@@ -47,7 +47,7 @@ export function Qutoes3() {
 export function Qutoes4() {
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center px-5 italic relative z-10">
-      <div className="rounded-lg bg-slate-200 text-pink-500 p-5 flex flex-col justify-center items-center gap-2 md:w-2/5 md:text-3xl md:gap-4 font-light">
+      <div className="rounded-lg bg-[#ff54c680] text-white p-5 flex flex-col justify-center items-center gap-2 md:w-2/5 md:text-3xl md:gap-4 font-light">
         <p className="text-center">
           Siapa yang ingin bertemu Allah dalam keadaan suci dan disucikan, maka
           menikahlah dengan perempuan-perempuan merdeka.
@@ -61,7 +61,7 @@ export function Qutoes4() {
 export function Qutoes5() {
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center px-5 italic relative z-10">
-      <div className="rounded-lg bg-slate-200 text-pink-500 p-5 flex flex-col justify-center items-center gap-2 md:w-2/5 md:text-3xl md:gap-4 font-light">
+      <div className="rounded-lg bg-[#ff54c680] text-white p-5 flex flex-col justify-center items-center gap-2 md:w-2/5 md:text-3xl md:gap-4 font-light">
         <p className="text-center">
           Siapa yang menikah maka sungguh ia telah diberi setengahnya ibadah.
         </p>

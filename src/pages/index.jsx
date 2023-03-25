@@ -9,6 +9,8 @@ import AkadScreen from "@/components/organisms/akadScreen";
 import ResepsiScreen from "@/components/organisms/resepsiScreen";
 import Quotes from "@/components/organisms/quranQuotes";
 import OpeningThanks from "@/components/organisms/openingThanks";
+import LocationAkadScreen from "@/components/organisms/locationAkadScreen";
+import LocationResepsiScreen from "@/components/organisms/locationResepsiScreen";
 
 // assets
 import music from "../../public/audio-file.mp3";
@@ -64,7 +66,9 @@ export default function Home() {
           <OpeningThanks name={name?.query?.to} />
           <Quotes />
           <AkadScreen />
+          <LocationAkadScreen />
           <ResepsiScreen />
+          <LocationResepsiScreen />
           {/* End of content */}
 
           <div className="flex justify-end fixed bottom-[-300px] left-[-300px] z-0">

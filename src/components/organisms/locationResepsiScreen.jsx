@@ -3,7 +3,7 @@ export default function LocationResepsiScreen() {
     <div className="w-full h-screen flex flex-col items-center justify-center relative z-10 p-4">
       <div className="bg-[#80808050] p-2 mb-3 rounded-lg md:w-[60%] ">
         <h1 className="text-center text-white text-lg md:text-3xl">
-          Insya&rsquo;allah resepsi akan dilaksanakan di:
+          Insya&rsquo;allah resepsi nikah akan dilaksanakan di:
         </h1>
 
         <h1 className="text-center font-black md:text-3xl">

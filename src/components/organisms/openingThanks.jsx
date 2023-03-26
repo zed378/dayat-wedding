@@ -42,7 +42,7 @@ export default function OpeningThanks({ name }) {
         <Image
           src={top}
           alt="top"
-          className="w-[150px] md:w-[300px] mt-10 h-auto rotate-180 animate__animated animate__fadeInUp"
+          className="w-[150px] md:w-[300px] mt-10 h-auto animate__animated animate__fadeInUp rotate-180"
         />
       </div>
     </div>

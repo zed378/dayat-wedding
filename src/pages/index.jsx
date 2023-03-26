@@ -5,11 +5,12 @@ import { useRouter } from "next/router";
 
 // components
 import OpeningScreen from "@/components/organisms/openingScreen";
-import AkadScreen from "@/components/organisms/akadScreen";
-import ResepsiScreen from "@/components/organisms/resepsiScreen";
-import Quotes from "@/components/organisms/quranQuotes";
 import OpeningThanks from "@/components/organisms/openingThanks";
+import BrideGroomScreen from "@/components/organisms/brideGroomsScreen";
+import Quotes from "@/components/organisms/quranQuotes";
+import AkadScreen from "@/components/organisms/akadScreen";
 import LocationAkadScreen from "@/components/organisms/locationAkadScreen";
+import ResepsiScreen from "@/components/organisms/resepsiScreen";
 import LocationResepsiScreen from "@/components/organisms/locationResepsiScreen";
 
 // assets
@@ -64,6 +65,7 @@ export default function Home() {
 
           {/* Place content here */}
           <OpeningThanks name={name?.query?.to} />
+          <BrideGroomScreen />
           <Quotes />
           <AkadScreen />
           <LocationAkadScreen />

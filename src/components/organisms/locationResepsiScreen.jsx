@@ -1,12 +1,12 @@
 export default function LocationResepsiScreen() {
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center relative z-10 p-4">
-      <div className="bg-[#80808050] p-2 mb-3 rounded-lg md:w-[60%] ">
-        <h1 className="text-center text-white text-lg md:text-3xl">
+      <div className="bg-[#f25cb960] p-4 mb-3 rounded-lg md:w-[60%]">
+        <h1 className="text-center text-white text-lg font-light md:text-3xl">
           Insya&rsquo;allah resepsi nikah akan dilaksanakan di:
         </h1>
 
-        <h1 className="text-center font-black md:text-3xl">
+        <h1 className="text-center text-white font-black md:text-3xl">
           Jalan Simomulyo Baru 05-E/17, Surabaya
         </h1>
       </div>

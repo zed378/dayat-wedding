@@ -11,9 +11,9 @@ export default function BrideGroomScreen() {
         <Image
           src={top}
           alt="top"
-          className="w-[150px] md:w-[300px] mb-10 h-auto"
+          className="w-[150px] md:w-[300px] mb-10 h-auto animate__animated animate__fadeInDown"
         />
-        <h1 className="text-center text-pink-500 text-3xl md:text-5xl mb-5 satisfy">
+        <h1 className="text-center text-pink-500 text-3xl md:text-5xl mb-5 satisfy animate__animated animate__fadeInDown">
           The Wedding Of
         </h1>
 
@@ -21,7 +21,7 @@ export default function BrideGroomScreen() {
           <Image
             src={groom}
             alt="groom"
-            className="w-[100px] h-[100px] md:h-[200px] md:w-[200px] 2xl:h-[300px] 2xl:w-[300px]"
+            className="w-[100px] h-[100px] md:h-[200px] md:w-[200px] 2xl:h-[300px] 2xl:w-[300px] animate__animated animate__fadeInLeft"
           />
           <Image
             src={love}
@@ -31,12 +31,12 @@ export default function BrideGroomScreen() {
           <Image
             src={bride}
             alt="bride"
-            className="w-[100px] h-[100px] md:h-[200px] md:w-[200px] 2xl:h-[300px] 2xl:w-[300px]"
+            className="w-[100px] h-[100px] md:h-[200px] md:w-[200px] 2xl:h-[300px] 2xl:w-[300px] animate__animated animate__fadeInRight"
           />
         </div>
 
         <div className="w-[90%] mt-5 md:flex md:justify-around md:items-center">
-          <div className="md:w-[40%] ">
+          <div className="md:w-[40%] animate__animated animate__fadeInUp">
             <h1 className="text-center text-pink-500 text-3xl font-light satisfy">
               Moch. Rochmat Hidayat
             </h1>
@@ -45,7 +45,7 @@ export default function BrideGroomScreen() {
             </p>
           </div>
 
-          <div>
+          <div className="animate__animated animate__fadeInUp">
             <div className="flex gap-1 justify-center py-2 ">
               <div className="animate-pulse bg-pink-500 h-2 w-2 md:h-3 md:w-3 rounded-full"></div>
               <div className="animate-pulse bg-pink-500 h-2 w-2 md:h-3 md:w-3 rounded-full"></div>
@@ -67,7 +67,7 @@ export default function BrideGroomScreen() {
             </div>
           </div>
 
-          <div className="md:w-[40%] ">
+          <div className="md:w-[40%] animate__animated animate__fadeInUp">
             <h1 className="text-center text-pink-500 text-3xl font-light satisfy">
               Lubena
             </h1>
@@ -80,7 +80,7 @@ export default function BrideGroomScreen() {
         <Image
           src={top}
           alt="top"
-          className="w-[150px] md:w-[300px] mt-10 h-auto rotate-180"
+          className="w-[150px] md:w-[300px] mt-10 h-auto rotate-180 animate__animated animate__fadeInUp"
         />
       </div>
     </div>

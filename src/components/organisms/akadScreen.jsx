@@ -1,7 +1,7 @@
 import Countdown from "react-countdown";
 import Image from "next/image";
-import groom from "../../../public/groom.svg";
-import bride from "../../../public/bride.svg";
+import groom from "../../../public/groom.png";
+import bride from "../../../public/bride.png";
 import Count from "../atoms/countDown";
 
 export default function AkadScreen() {
@@ -14,12 +14,12 @@ export default function AkadScreen() {
           <Image
             src={groom}
             alt="groom"
-            className="w-[100px] h-[100px] md:h-[200px] md:w-[200px] 2xl:h-[300px] 2xl:w-[300px]"
+            className="w-[100px] h-auto md:w-[200px] 2xl:w-[300px]"
           />
           <Image
             src={bride}
             alt="bride"
-            className="w-[100px] h-[100px] md:h-[200px] md:w-[200px] 2xl:h-[300px] 2xl:w-[300px]"
+            className="w-[100px] h-auto md:w-[200px] 2xl:w-[300px]"
           />
         </div>
 

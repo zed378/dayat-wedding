@@ -1,6 +1,6 @@
 import Image from "next/image";
-import groom from "../../../public/groom.svg";
-import bride from "../../../public/bride.svg";
+import groom from "../../../public/groom.png";
+import bride from "../../../public/bride.png";
 import love from "../../../public/love1.svg";
 import top from "../../../public/top.svg";
 
@@ -17,11 +17,11 @@ export default function BrideGroomScreen() {
           The Wedding Of
         </h1>
 
-        <div className="w-full flex justify-center items-center relative">
+        <div className="w-full flex justify-center gap-2 items-center relative">
           <Image
             src={groom}
             alt="groom"
-            className="w-[100px] h-[100px] md:h-[200px] md:w-[200px] 2xl:h-[300px] 2xl:w-[300px] animate__animated animate__fadeInLeft"
+            className="w-[100px] h-auto md:w-[200px] 2xl:w-[300px] animate__animated animate__fadeInLeft"
           />
           <Image
             src={love}
@@ -31,7 +31,7 @@ export default function BrideGroomScreen() {
           <Image
             src={bride}
             alt="bride"
-            className="w-[100px] h-[100px] md:h-[200px] md:w-[200px] 2xl:h-[300px] 2xl:w-[300px] animate__animated animate__fadeInRight"
+            className="w-[100px] h-auto md:w-[200px] 2xl:w-[300px] animate__animated animate__fadeInRight"
           />
         </div>
 

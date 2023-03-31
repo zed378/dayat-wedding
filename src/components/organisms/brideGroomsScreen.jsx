@@ -45,8 +45,8 @@ export default function BrideGroomScreen() {
         </div>
 
         <div className="w-[90%] mt-5 md:flex md:justify-around md:items-center">
-          <Slide direction="down">
-            <div className="md:w-[40%] ">
+          <Slide direction="down" className="md:w-[40%] ">
+            <div>
               <h1 className="text-center text-pink-500 text-3xl font-light satisfy">
                 Moch. Rochmat Hidayat
               </h1>
@@ -82,8 +82,8 @@ export default function BrideGroomScreen() {
             </div>
           </Zoom>
 
-          <Slide direction="up">
-            <div className="md:w-[40%] ">
+          <Slide direction="up" className="md:w-[40%] ">
+            <div>
               <h1 className="text-center text-pink-500 text-3xl font-light satisfy">
                 Lubena
               </h1>

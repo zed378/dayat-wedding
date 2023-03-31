@@ -47,9 +47,9 @@ export default function AkadScreen() {
           </Fade>
         </div>
 
-        <Fade direction="up">
+        <Zoom>
           <Countdown date={akad} renderer={AkadCountdown} />
-        </Fade>
+        </Zoom>
       </div>
     </div>
   );

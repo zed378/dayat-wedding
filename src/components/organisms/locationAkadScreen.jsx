@@ -2,8 +2,8 @@ import { Fade, Slide, Zoom } from "react-awesome-reveal";
 
 export default function LocationAkadScreen() {
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center relative z-10 p-4">
-      <Zoom className="w-full">
+    <div className="w-full h-screen relative z-10 p-4">
+      <Zoom className="w-full flex flex-col items-center justify-center">
         <div className="bg-[#f25cb960] p-4 mb-3 rounded-lg md:w-[60%]">
           <Fade direction="up" cascade>
             <h1 className="text-center text-white text-lg font-light md:text-3xl">
@@ -18,8 +18,7 @@ export default function LocationAkadScreen() {
         <div className="w-full md:h-[60%] h-[300px] md:px-[20%] flex justify-center items-center rounded-xl overflow-hidden">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d989.4303515112948!2d112.70276222921468!3d-7.272509369355847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMTYnMjEuMCJTIDExMsKwNDInMTEuOSJF!5e0!3m2!1sen!2sid!4v1679753954954!5m2!1sen!2sid"
-            width={"100%"}
-            height={"100%"}
+            className="w-[1600px] h-[300px] md:h-[55vh]"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>

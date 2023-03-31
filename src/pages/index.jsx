@@ -12,6 +12,8 @@ import AkadScreen from "@/components/organisms/akadScreen";
 import LocationAkadScreen from "@/components/organisms/locationAkadScreen";
 import ResepsiScreen from "@/components/organisms/resepsiScreen";
 import LocationResepsiScreen from "@/components/organisms/locationResepsiScreen";
+import RekeningScreen from "@/components/organisms/rekeningScreen";
+import RestuScreen from "@/components/organisms/restuScreen";
 
 // assets
 import music from "../../public/audio-file.mp3";
@@ -71,6 +73,8 @@ export default function Home() {
           <LocationAkadScreen />
           <ResepsiScreen />
           <LocationResepsiScreen />
+          <RekeningScreen />
+          <RestuScreen />
           {/* End of content */}
 
           <div className="flex justify-end fixed bottom-[-300px] left-[-300px] z-0">

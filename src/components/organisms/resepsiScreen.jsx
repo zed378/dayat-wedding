@@ -47,9 +47,9 @@ export default function ResepsiScreen() {
           </Fade>
         </div>
 
-        <Fade direction="up">
+        <Zoom>
           <Countdown date={resepsi} renderer={ResepsiCountDown} />
-        </Fade>
+        </Zoom>
       </div>
     </div>
   );

@@ -12,10 +12,11 @@ import copas from "../../../public/copas.svg";
 export default function RekeningScreen() {
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [alamat, setAlamat] = useState(false);
 
   return (
-    <div className="w-full h-screen md:px-[15%] py-10 px-3">
-      <div className="w-full h-full rounded-lg flex flex-col items-center justify-center bg-[#ffffff70] md:px-10 gap-2 relative z-10 px-3">
+    <div className="w-full h-auto md:px-[15%] py-5 px-3">
+      <div className="w-full h-auto py-5 rounded-lg flex flex-col items-center justify-center bg-[#ffffff70] md:px-10 gap-2 relative z-10 px-3">
         <Fade direction="down">
           <Image
             src={top}
@@ -77,11 +78,30 @@ export default function RekeningScreen() {
 
               <p className="md:text-2xl font-light text-center text-sm">
                 Alamat: Simomulyo Baru 05-E/17, Kelurahan Simomulyo Baru,
-                Kecamatan SUkomanunggal, Surabaya, 60281
+                Kecamatan Sukomanunggal, Surabaya, 60281
               </p>
               <p className="md:text-2xl font-light text-center">
                 Penerima: Dayat
               </p>
+
+              <button
+                className="flex items-center gap-2 bg-pink-500 text-white px-5 py-2 rounded-lg"
+                onClick={() => {
+                  copy(
+                    " Simomulyo Baru 05-E/17, Kelurahan Simomulyo Baru, Kecamatan Sukomanunggal, Surabaya, 60281"
+                  );
+                  setAlamat(true);
+                }}
+              >
+                {alamat ? (
+                  <span className="font-light">&#10003; Tersalin</span>
+                ) : (
+                  <>
+                    <Image src={copas} alt="copas" className="w-5 h-auto" />{" "}
+                    Salin Alamat
+                  </>
+                )}
+              </button>
             </div>
           </Zoom>
         )}

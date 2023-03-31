@@ -10,14 +10,15 @@ export default function LocationAkadScreen() {
               Insya&rsquo;allah akad nikah akan dilaksanakan di:
             </h1>
             <h1 className="text-center text-white font-black md:text-3xl">
-              Jalan Simomulyo Baru 05-E/17, Surabaya
+              Kantor Urusan Agama (KUA) Gubeng, Gg. Bengkok II No.1, Baratajaya,
+              Kec. Gubeng, Kota SBY, Jawa Timur 60284
             </h1>
           </Fade>
         </div>
 
         <div className="w-full md:h-[60%] h-[300px] md:px-[20%] flex justify-center items-center rounded-xl overflow-hidden">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d989.4303515112948!2d112.70276222921468!3d-7.272509369355847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMTYnMjEuMCJTIDExMsKwNDInMTEuOSJF!5e0!3m2!1sen!2sid!4v1679753954954!5m2!1sen!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.4967474467417!2d112.75906381536021!3d-7.297950873766896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbad179826bf%3A0x4c3213436015b701!2sKantor%20Urusan%20Agama%20(KUA)%20Gubeng!5e0!3m2!1sen!2sid!4v1680271273456!5m2!1sen!2sid"
             className="w-[1600px] h-[300px] md:h-[55vh]"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"

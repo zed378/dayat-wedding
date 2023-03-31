@@ -13,6 +13,7 @@ import LocationAkadScreen from "@/components/organisms/locationAkadScreen";
 import ResepsiScreen from "@/components/organisms/resepsiScreen";
 import LocationResepsiScreen from "@/components/organisms/locationResepsiScreen";
 import RekeningScreen from "@/components/organisms/rekeningScreen";
+import UcapanScreen from "@/components/organisms/ucapanScreen";
 import RestuScreen from "@/components/organisms/restuScreen";
 
 // assets
@@ -73,6 +74,7 @@ export default function Home() {
           <LocationAkadScreen />
           <ResepsiScreen />
           <LocationResepsiScreen />
+          <UcapanScreen />
           <RekeningScreen />
           <RestuScreen />
           {/* End of content */}

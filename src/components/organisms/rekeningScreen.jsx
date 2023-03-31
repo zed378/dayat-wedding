@@ -16,7 +16,7 @@ export default function RekeningScreen() {
 
   return (
     <div className="w-full h-auto md:px-[15%] py-5 px-3">
-      <div className="w-full h-auto py-5 rounded-lg flex flex-col items-center justify-center bg-[#ffffff70] md:px-10 gap-2 relative z-10 px-3">
+      <div className="w-full h-auto py-10 rounded-lg flex flex-col items-center justify-center bg-[#ffffff70] md:px-10 gap-2 relative z-10 px-3">
         <Fade direction="down">
           <Image
             src={top}

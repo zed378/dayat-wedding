@@ -17,18 +17,20 @@ export default function RestuScreen() {
         </Fade>
 
         <Zoom cascade>
-          <h1 className="text-center font-light">
+          <h1 className="text-center font-light md:text-2xl">
             Atas kehadiran dan do’a restu dari Bapak/Ibu/Saudara/i sekalian,
             kami mengucapkan Terima Kasih.
           </h1>
 
-          <h1 className="text-center">Wassalamu’alaikum Wr. Wb.</h1>
+          <h1 className="text-center md:text-2xl">Wassalamu’alaikum Wr. Wb.</h1>
         </Zoom>
 
         <Fade direction="up">
-          <h1 className="text-center mt-10">Kami yang berbahagia</h1>
+          <h1 className="text-center mt-10 md:text-2xl">
+            Kami yang berbahagia
+          </h1>
 
-          <h1 className="text-center text-4xl text-pink-500 satisfy">
+          <h1 className="text-center text-4xl md:text-6xl text-pink-500 satisfy">
             Dayat & Lubena
           </h1>
         </Fade>

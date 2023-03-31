@@ -1,26 +1,26 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "wedding",
-    "host": "127.0.0.1",
+    "username": "freedb_zedth",
+    "password": "T@wNG2w&u6qU@YS",
+    "database": "freedb_wedding",
+    "host": "sql.freedb.tech",
+    "port": 3306,
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "username": "freedb_zedth",
+    "password": "T@wNG2w&u6qU@YS",
+    "database": "freedb_wedding",
+    "host": "sql.freedb.tech",
+    "port": 3306,
     "dialect": "mysql"
   },
   "production": {
-    "use_env_variable": "MYSQLURL",
-    "dialect": "mysql",
-    "dialectOptions": {
-      "ssl": {
-        "require": true,
-        "rejectUnauthorized": false
-      }
-    }
+    "username": "freedb_zedth",
+    "password": "T@wNG2w&u6qU@YS",
+    "database": "freedb_wedding",
+    "host": "sql.freedb.tech",
+    "port": 3306,
+    "dialect": "mysql"
   }
 }

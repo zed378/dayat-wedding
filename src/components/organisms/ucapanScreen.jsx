@@ -13,6 +13,7 @@ export default function UcapanScreen() {
     name: "",
     messages: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const getMessages = async () => {
     try {
@@ -27,6 +28,7 @@ export default function UcapanScreen() {
   };
 
   const submitMessage = async () => {
+    setLoading(true);
     await axios
       .post("https://tame-codfish.cyclic.app/api/v1/add", {
         name: addMessage.name,
@@ -43,6 +45,7 @@ export default function UcapanScreen() {
       })
       .finally(() => {
         getMessages();
+        setLoading(false);
       });
   };
 
@@ -89,15 +92,37 @@ export default function UcapanScreen() {
           </div>
 
           <button
-            className="w-[80vw] md:w-[60vw] bg-pink-400 text-white rounded-lg py-2 font-light text-xl mb-5"
+            className="w-[80vw] md:w-[60vw] bg-pink-400 text-white flex  items-center justify-center rounded-lg py-2 font-light text-xl mb-5"
             onClick={submitMessage}
           >
+            {loading && (
+              <svg
+                class="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  class="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="4"
+                ></circle>
+                <path
+                  class="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                ></path>
+              </svg>
+            )}
             Kirim
           </button>
         </Zoom>
 
-        <div className="w-full h-[350px] overflow-auto flex flex-col items-center overflow-y-scroll bg-scroll">
-          <Fade direction="left">
+        <div className="w-full max-h-[350px] overflow-auto flex flex-col items-center overflow-y-scroll bg-scroll">
+          <Fade direction="left" duration={500}>
             {messages.map((item, index) => (
               <div
                 key={index}

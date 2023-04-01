@@ -76,7 +76,7 @@ export default function UcapanScreen() {
               onChange={(e) =>
                 setAddMessage({ ...addMessage, name: e.target.value })
               }
-              className="w-[80vw] md:w-[60vw] text-white bg-[#ec489950] h-10 focus:border-none outline-none px-3 rounded-lg"
+              className="w-[80vw] md:w-[60vw] text-white bg-[#ec489980] h-10 focus:border-none outline-none px-3 rounded-lg placeholder-gray-600"
             />
             <textarea
               value={addMessage.messages}
@@ -84,7 +84,7 @@ export default function UcapanScreen() {
               onChange={(e) => {
                 setAddMessage({ ...addMessage, messages: e.target.value });
               }}
-              className="w-[80vw] md:w-[60vw] text-white bg-[#ec489950] h-[10rem] focus:border-none outline-none px-3 py-2 rounded-lg resize-none"
+              className="w-[80vw] md:w-[60vw] text-white bg-[#ec489980] h-[10rem] focus:border-none outline-none px-3 py-2 rounded-lg resize-none placeholder-gray-600"
             />
           </div>
 
@@ -96,21 +96,23 @@ export default function UcapanScreen() {
           </button>
         </Zoom>
 
-        <Fade direction="up" cascade>
-          {messages.map((item, index) => (
-            <div
-              key={index}
-              className="w-[80vw] md:w-[60vw] flex gap-3 items-start mb-1"
-            >
-              <Image src={avatar} className="h-10 w-10" alt="avatar" />
-              <div className="w-[100%] bg-white relative px-3 py-2 rounded-lg">
-                <div class="left-0 top-1 z-[-1] absolute bottom-0 transform -translate-x-1/2 translate-y-1/2 rotate-45 w-3 h-3 bg-white "></div>
-                <h1 className="text-md">{item.name}</h1>
-                <h1 className="text-sm font-light">{item.messages}</h1>
+        <div className="w-full h-[350px] overflow-auto flex flex-col items-center overflow-y-scroll bg-scroll">
+          <Fade direction="left">
+            {messages.map((item, index) => (
+              <div
+                key={index}
+                className="w-[80vw] md:w-[60vw] flex gap-3 items-start mb-2"
+              >
+                <Image src={avatar} className="h-10 w-10" alt="avatar" />
+                <div className="w-[100%] bg-white relative px-3 py-2 rounded-lg">
+                  <div class="left-0 top-1 z-[-1] absolute bottom-0 transform -translate-x-1/2 translate-y-1/2 rotate-45 w-3 h-3 bg-white "></div>
+                  <h1 className="text-md">{item.name}</h1>
+                  <h1 className="text-sm font-light">{item.messages}</h1>
+                </div>
               </div>
-            </div>
-          ))}
-        </Fade>
+            ))}
+          </Fade>
+        </div>
 
         <Fade direction="up">
           <Image

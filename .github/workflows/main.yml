@@ -12,10 +12,10 @@ jobs:
 
       - name: Build project
         run: |
-          sudo docker rm -f dayat
-          sudo docker build -t dayat .
+          sudo docker rm -f dayat-wedding
+          sudo docker build -t dayat-wedding .
 
       - name: Deploy and Running project
         run: |
-          sudo docker run -d --rm --name dayat -p 3001:3000 dayat
+          sudo docker run -d --rm --name dayat-wedding -p 3001:3000 dayat-wedding
           sudo docker image prune -f

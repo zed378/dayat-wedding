@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  output: "standalone",
   reactStrictMode: true,
   webpack(config, options) {
     config.module.rules.push({

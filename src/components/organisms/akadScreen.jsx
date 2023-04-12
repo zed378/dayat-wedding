@@ -43,7 +43,7 @@ export default function AkadScreen() {
             <p className="text-xl md:text-[2rem] font-bold mb-2">
               Jumat, 12 Mei 2023
             </p>
-            <p className="text-xl md:text-[2rem]">Pukul 09.00 WIB</p>
+            <p className="text-xl md:text-[2rem]">Pukul 13.00 WIB</p>
           </Fade>
         </div>
 

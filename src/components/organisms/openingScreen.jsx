@@ -33,7 +33,7 @@ export default function OpeningScreen({ open, name }) {
           <p>* Mohon maaf apabila ada penulisan nama atau gelar yang salah.</p>
         </div>
         <button
-          className="bg-pink-600 px-6 py-3 rounded-xl text-white text-xl font-bold hover:bg-pink-800 mt-6 relative z-10 "
+          className="bg-pink-600 px-4 py-2 rounded-xl text-white text-lg font-bold hover:bg-pink-800 mt-6 relative z-10 "
           onClick={() => {
             open();
           }}

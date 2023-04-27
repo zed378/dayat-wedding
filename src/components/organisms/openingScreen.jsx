@@ -22,7 +22,7 @@ export default function OpeningScreen({ open, name }) {
         <h1 className="text-2xl text-pink-500 text-center mt-9 px-2 ">
           Kepada Yth. Bapak/Ibu/Saudara/i:
         </h1>
-        <div className="capitalize satisfy text-pink-500 text-4xl text-center px-2 ">
+        <div className="capitalize satisfy text-pink-500 text-2xl text-center px-2 ">
           {name}
         </div>
         <div className="text-center mt-4 text-xs px-2 ">

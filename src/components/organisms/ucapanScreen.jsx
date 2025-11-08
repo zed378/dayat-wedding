@@ -136,7 +136,7 @@ export default function UcapanScreen() {
                 <div className="w-[100%] bg-white relative px-3 py-2 rounded-lg">
                   <div class="left-0 top-1 z-[-1] absolute bottom-0 transform -translate-x-1/2 translate-y-1/2 rotate-45 w-3 h-3 bg-white "></div>
                   <h1 className="text-md">{item?.name}</h1>
-                  <h1 className="text-sm font-light">{item?.message}</h1>
+                  <h1 className="text-sm font-light">{item?.messages}</h1>
                 </div>
               </div>
             ))}

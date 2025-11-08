@@ -14,7 +14,7 @@ export default function UcapanScreen() {
   const getMessages = async () => {
     try {
       const data = await axios.get(
-        'https://tame-codfish.cyclic.app/api/v1/message'
+        'https://be.rizkyandfatchur.my.id/api/v1/message'
       );
 
       setMessages(data.data.data);

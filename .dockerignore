@@ -1,0 +1,5 @@
+docker-compose.yml
+.next
+.git
+node_modules
+data

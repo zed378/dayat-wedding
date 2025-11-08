@@ -1,21 +1,21 @@
-const { message } = require("../../models");
+const { Messages } = require('../../models');
 
-exports.getMessage = async (req, res) => {
+exports.getMessages = async (req, res) => {
   try {
-    const data = await message.findAll({
-      order: [["id", "DESC"]],
+    const data = await Messages.findAll({
+      order: [['id', 'DESC']],
       attributes: {
-        exclude: ["createdAt", "updatedAt"],
+        exclude: ['createdAt', 'updatedAt'],
       },
     });
 
     res.send({
-      status: "Success",
+      status: 'Success',
       data,
     });
   } catch (error) {
     res.send({
-      status: "Failed",
+      status: 'Failed',
       message: "Server Error, Can't Get The Data",
     });
   }
@@ -25,15 +25,15 @@ exports.addMessage = async (req, res) => {
   try {
     const { name, messages } = req.body;
 
-    const data = await message.create({ name, messages });
+    const data = await Messages.create({ name, messages });
 
     res.send({
-      status: "Success",
+      status: 'Success',
       data,
     });
   } catch (error) {
     res.send({
-      status: "Failed",
+      status: 'Failed',
       message: "Server Error, Can't Add The Data",
     });
   }

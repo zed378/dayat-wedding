@@ -10,7 +10,7 @@ const Messages = db.define(
       primaryKey: true,
     },
     name: { type: DataTypes.STRING },
-    message: { type: DataTypes.STRING },
+    messages: { type: DataTypes.STRING },
     createdAt: {
       type: DataTypes.DATE,
       defaultValue: Sequelize.NOW,

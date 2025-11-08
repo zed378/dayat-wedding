@@ -19,8 +19,28 @@ import UcapanScreen from '@/components/organisms/ucapanScreen';
 import RestuScreen from '@/components/organisms/restuScreen';
 
 export default function Home() {
-  const name = useRouter();
+  const router = useRouter();
   const [open, setOpen] = useState(true);
+
+  const guestName = router?.query?.to || '';
+
+  useEffect(() => {
+    // Preload music for smoother playback
+    const audio = document.getElementById('music');
+    if (audio) {
+      audio.load();
+    }
+  }, []);
+
+  const handleOpen = () => {
+    setOpen(false);
+    const audio = document.getElementById('music');
+    if (audio) {
+      audio.play().catch(() => {
+        console.warn('Autoplay prevented by browser');
+      });
+    }
+  };
 
   return (
     <>
@@ -30,73 +50,70 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
-      <div className="hidden">
-        <audio src="/audio-file.mp3" autoPlay loop id="music" />
-      </div>
+      {/* Background music */}
+      <audio id="music" src="/audio-file.mp3" loop className="hidden" />
 
-      {open && (
-        <OpeningScreen
-          open={() => {
-            setOpen(false);
-            document.getElementById('music').play();
-          }}
-          name={name?.query?.to}
-        />
-      )}
-
-      {!open && (
-        <div className="w-full h-screen overflow-auto bg-slate-300 relative akad">
-          <div className="flex justify-end fixed top-0 right-0 z-0">
+      {open ? (
+        <OpeningScreen open={handleOpen} name={guestName} />
+      ) : (
+        <div className="relative w-full h-screen overflow-auto bg-slate-300 akad">
+          {/* Top right garnish */}
+          <div className="fixed top-0 right-0 z-0 flex">
             <Image
               src="/tr.webp"
               width={300}
               height={300}
-              className="h-[250px] w-[250px] md:h-[450px] md:w-[450px] md:hidden pulsate-fwd"
+              className="h-[250px] w-[250px] md:hidden md:h-[450px] md:w-[450px] pulsate-fwd"
               alt="garnish"
+              priority
             />
           </div>
 
-          <div className="flex justify-end fixed top-[-300px] right-[-300px] z-0">
+          {/* Large rotating garnish */}
+          <div className="fixed top-[-300px] right-[-300px] z-0 hidden md:flex">
             <Image
               src="/garnish.svg"
-              width={300}
-              height={300}
-              className="md:h-[750px] md:w-[750px] hidden md:block animate-spin-slow"
+              width={750}
+              height={750}
+              className="animate-spin-slow"
               alt="garnish"
             />
           </div>
 
-          {/* Place content here */}
-          <OpeningThanks name={name?.query?.to} />
-          <BrideGroomScreen />
-          <Quotes />
-          <AkadScreen />
-          <LocationAkadScreen />
-          <ResepsiScreen />
-          <LocationResepsiScreen />
-          <ResepsiScreen1 />
-          <LocationResepsiScreen1 />
-          <UcapanScreen />
-          <RekeningScreen />
-          <RestuScreen />
-          {/* End of content */}
+          {/* Content */}
+          <main className="relative z-10">
+            <OpeningThanks name={guestName} />
+            <BrideGroomScreen />
+            <Quotes />
+            <AkadScreen />
+            <LocationAkadScreen />
+            <ResepsiScreen />
+            <LocationResepsiScreen />
+            <ResepsiScreen1 />
+            <LocationResepsiScreen1 />
+            <UcapanScreen />
+            <RekeningScreen />
+            <RestuScreen />
+          </main>
 
-          <div className="flex justify-end fixed bottom-[-300px] left-[-300px] z-0">
+          {/* Bottom left garnish */}
+          <div className="fixed bottom-[-300px] left-[-300px] z-0 hidden md:flex">
             <Image
               src="/garnish.svg"
-              width={300}
-              height={300}
-              className="md:h-[750px] md:w-[750px] hidden md:block animate-spin-slow"
+              width={750}
+              height={750}
+              className="animate-spin-slow"
               alt="garnish"
             />
           </div>
 
-          <div className="flex justify-start fixed bottom-0 left-0 z-0 md:hidden">
+          {/* Mobile bottom-left garnish */}
+          <div className="fixed bottom-0 left-0 z-0 flex md:hidden">
             <Image
               src="/bl.webp"
-              width={300}
-              height={300}
-              className="h-[250px] w-[250px] md:h-[350px] md:w-[350px] rotate-180 pulsate-fwd"
+              width={250}
+              height={250}
+              className="rotate-180 pulsate-fwd"
               alt="garnish"
             />
           </div>

@@ -121,16 +121,22 @@ export default function UcapanScreen() {
 
         <div className="w-full max-h-[350px] overflow-auto flex flex-col items-center overflow-y-scroll bg-scroll">
           <Fade direction="left" duration={500}>
-            {messages.map((item, index) => (
+            {messages?.map((item, index) => (
               <div
                 key={index}
                 className="w-[80vw] md:w-[60vw] flex gap-3 items-start mb-2"
               >
-                <Image src="/avatar.svg" className="h-10 w-10" alt="avatar" />
+                <Image
+                  src="/avatar.svg"
+                  height={50}
+                  width={50}
+                  className="h-10 w-10"
+                  alt="avatar"
+                />
                 <div className="w-[100%] bg-white relative px-3 py-2 rounded-lg">
                   <div class="left-0 top-1 z-[-1] absolute bottom-0 transform -translate-x-1/2 translate-y-1/2 rotate-45 w-3 h-3 bg-white "></div>
-                  <h1 className="text-md">{item.name}</h1>
-                  <h1 className="text-sm font-light">{item.messages}</h1>
+                  <h1 className="text-md">{item?.name}</h1>
+                  <h1 className="text-sm font-light">{item?.message}</h1>
                 </div>
               </div>
             ))}

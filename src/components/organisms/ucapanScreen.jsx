@@ -1,24 +1,20 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
-import Image from "next/image";
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
-
-import avatar from "../../../public/avatar.svg";
-import top from "../../../public/top.svg";
-import bottom from "../../../public/bottom.svg";
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import Image from 'next/image';
+import { Fade, Slide, Zoom } from 'react-awesome-reveal';
 
 export default function UcapanScreen() {
   const [messages, setMessages] = useState([]);
   const [addMessage, setAddMessage] = useState({
-    name: "",
-    messages: "",
+    name: '',
+    messages: '',
   });
   const [loading, setLoading] = useState(false);
 
   const getMessages = async () => {
     try {
       const data = await axios.get(
-        "https://tame-codfish.cyclic.app/api/v1/message"
+        'https://tame-codfish.cyclic.app/api/v1/message'
       );
 
       setMessages(data.data.data);
@@ -30,14 +26,14 @@ export default function UcapanScreen() {
   const submitMessage = async () => {
     setLoading(true);
     await axios
-      .post("https://tame-codfish.cyclic.app/api/v1/add", {
+      .post('https://be.rizkyandfatchur.my.id/api/v1/add', {
         name: addMessage.name,
         messages: addMessage.messages,
       })
       .then(() => {
         setAddMessage({
-          name: "",
-          messages: "",
+          name: '',
+          messages: '',
         });
       })
       .catch((err) => {
@@ -58,7 +54,9 @@ export default function UcapanScreen() {
       <div className="w-full h-full rounded-lg flex flex-col items-center justify-center bg-[#ffffff70] px-3 py-5 md:px-10 gap-2 relative z-10">
         <Fade direction="down">
           <Image
-            src={top}
+            src="/top.svg"
+            width={300}
+            height={300}
             alt="top"
             className="w-[150px] md:w-[300px] mb-5 h-auto"
           />
@@ -128,7 +126,7 @@ export default function UcapanScreen() {
                 key={index}
                 className="w-[80vw] md:w-[60vw] flex gap-3 items-start mb-2"
               >
-                <Image src={avatar} className="h-10 w-10" alt="avatar" />
+                <Image src="/avatar.svg" className="h-10 w-10" alt="avatar" />
                 <div className="w-[100%] bg-white relative px-3 py-2 rounded-lg">
                   <div class="left-0 top-1 z-[-1] absolute bottom-0 transform -translate-x-1/2 translate-y-1/2 rotate-45 w-3 h-3 bg-white "></div>
                   <h1 className="text-md">{item.name}</h1>
@@ -141,7 +139,9 @@ export default function UcapanScreen() {
 
         <Fade direction="up">
           <Image
-            src={bottom}
+            src="/bottom.svg"
+            width={300}
+            height={300}
             alt="bottom"
             className="w-[150px] md:w-[300px] mt-5 h-auto"
           />

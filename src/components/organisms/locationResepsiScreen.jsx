@@ -1,4 +1,4 @@
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import { Fade, Slide, Zoom } from 'react-awesome-reveal';
 
 export default function LocationResepsiScreen() {
   return (
@@ -11,20 +11,20 @@ export default function LocationResepsiScreen() {
             </h1>
 
             <h1 className="text-center text-white font-black md:text-3xl">
-              Jalan Simomulyo Baru 05-E/17, Surabaya
+              Jl. Mujahidin RT. 19 RW. 04 Damarsi Buduran Sidoarjo
             </h1>
           </Fade>
         </div>
         <div className="w-full md:h-[60%] h-[300px] md:px-[20%] flex justify-center items-center rounded-xl overflow-hidden">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d989.4303515112948!2d112.70276222921468!3d-7.272509369355847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMTYnMjEuMCJTIDExMsKwNDInMTEuOSJF!5e0!3m2!1sen!2sid!4v1679753954954!5m2!1sen!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d294.0633223716231!2d112.760983480963!3d-7.417715314368958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e42d7c7cd649%3A0x3651e81bea67d87f!2sJl.%20Mujahidin%2C%20Damarsi%2C%20Kec.%20Buduran%2C%20Kabupaten%20Sidoarjo%2C%20Jawa%20Timur%2061252!5e0!3m2!1sid!2sid!4v1762601309639!5m2!1sid!2sid"
             className="w-[1600px] h-[300px] md:h-[55vh]"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
         <h1 className="mt-3 md:text-2xl text-center">
-          Jika ingin membuka di google maps silakan pencet tulisan{" "}
+          Jika ingin membuka di google maps silakan pencet tulisan{' '}
           <b>View larger map</b>
         </h1>
       </Zoom>

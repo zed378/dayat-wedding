@@ -1,8 +1,5 @@
-import Image from "next/image";
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
-
-import top from "../../../public/top.svg";
-import bottom from "../../../public/bottom.svg";
+import Image from 'next/image';
+import { Fade, Slide, Zoom } from 'react-awesome-reveal';
 
 export default function RestuScreen() {
   return (
@@ -10,7 +7,9 @@ export default function RestuScreen() {
       <div className="w-full h-full rounded-lg flex flex-col items-center justify-center bg-[#ffffff70] px-3 md:px-10 gap-2 relative z-10">
         <Fade direction="down">
           <Image
-            src={top}
+            src="/top.svg"
+            width={300}
+            height={300}
             alt="top"
             className="w-[150px] md:w-[300px] mb-5 h-auto"
           />
@@ -31,13 +30,15 @@ export default function RestuScreen() {
           </h1>
 
           <h1 className="text-center text-4xl md:text-6xl text-pink-500 satisfy">
-            Dayat & Lubena
+            Arika & Fatchur
           </h1>
         </Fade>
 
         <Fade direction="up">
           <Image
-            src={bottom}
+            src="/bottom.svg"
+            width={300}
+            height={300}
             alt="bottom"
             className="w-[150px] md:w-[300px] mt-5 h-auto"
           />

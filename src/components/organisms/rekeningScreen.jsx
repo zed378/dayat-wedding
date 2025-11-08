@@ -1,17 +1,12 @@
-import { useState } from "react";
-import Image from "next/image";
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
-import copy from "copy-to-clipboard";
-
-import top from "../../../public/top.svg";
-import bottom from "../../../public/bottom.svg";
-import gift from "../../../public/gift.svg";
-import bank from "../../../public/bank.svg";
-import copas from "../../../public/copas.svg";
+import { useState } from 'react';
+import Image from 'next/image';
+import { Fade, Slide, Zoom } from 'react-awesome-reveal';
+import copy from 'copy-to-clipboard';
 
 export default function RekeningScreen() {
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [copied1, setCopied1] = useState(false);
   const [alamat, setAlamat] = useState(false);
 
   return (
@@ -19,7 +14,9 @@ export default function RekeningScreen() {
       <div className="w-full h-auto py-10 rounded-lg flex flex-col items-center justify-center bg-[#ffffff70] md:px-10 gap-2 relative z-10 px-3">
         <Fade direction="down">
           <Image
-            src={top}
+            src="/top.svg"
+            width={300}
+            height={300}
             alt="top"
             className="w-[150px] md:w-[300px] mb-5 h-auto"
           />
@@ -27,8 +24,8 @@ export default function RekeningScreen() {
 
         <Fade direction="down">
           <h1 className="text-center md:text-2xl font-light">
-            Bagi rekan-rekan / saudara/i yang berhalangan hadir, kami tambahkan
-            fitur di bawah ini:
+            Bagi rekan-rekan / saudara/i yang ingin mengirim kado dan berbagi
+            kebahagiaan:
           </h1>
         </Fade>
 
@@ -37,7 +34,14 @@ export default function RekeningScreen() {
             className="px-4 py-2 bg-pink-300 rounded-lg flex gap-2 items-center text-white text-xl my-4"
             onClick={() => setOpen(!open)}
           >
-            <Image src={gift} alt="gift" className="w-10 h-auto" /> Kirim Hadiah
+            <Image
+              src="/gift.svg"
+              width={300}
+              height={300}
+              alt="gift"
+              className="w-10 h-auto"
+            />{' '}
+            Kirim Hadiah
           </button>
         </Zoom>
 
@@ -45,20 +49,22 @@ export default function RekeningScreen() {
           <Zoom cascade>
             <div className="w-[80vw] md:w-[40vw] p-5 rounded-lg bg-[#ec489950] flex flex-col gap-2 items-center">
               <Image
-                src={bank}
+                src="/bank.svg"
+                width={300}
+                height={150}
                 alt="bank"
                 className="w-[150px] md:w-[300px] h-auto"
               />
 
-              <h1 className="font-light md:text-2x text-centerl">
-                Bank Jatim a.n. Fitriah:
+              <h1 className="font-light md:text-2x text-center">
+                Bank BCA a.n. Rizky Arika Rahmadhani:
               </h1>
-              <h1 className="md:text-2xl text-center">0386099197</h1>
+              <h1 className="md:text-2xl text-center">6670710163</h1>
 
               <button
                 className="flex items-center gap-2 bg-pink-500 text-white px-5 py-2 rounded-lg"
                 onClick={() => {
-                  copy("0386099197");
+                  copy('6670710163');
                   setCopied(true);
                 }}
               >
@@ -66,7 +72,51 @@ export default function RekeningScreen() {
                   <span className="font-light">&#10003; Tersalin</span>
                 ) : (
                   <>
-                    <Image src={copas} alt="copas" className="w-5 h-auto" />{" "}
+                    <Image
+                      src="/copas.svg"
+                      width={300}
+                      height={300}
+                      alt="copas"
+                      className="w-5 h-auto"
+                    />{' '}
+                    Salin No. Rekening
+                  </>
+                )}
+              </button>
+            </div>
+
+            <div className="w-[80vw] md:w-[40vw] p-5 rounded-lg bg-[#ec489950] flex flex-col gap-2 items-center">
+              <Image
+                src="/bni.svg"
+                width={300}
+                height={150}
+                alt="bank"
+                className="w-[150px] md:w-[300px] h-auto"
+              />
+
+              <h1 className="font-light md:text-2x text-center">
+                Bank BNI a.n. Rizky Arika Rahmadhani:
+              </h1>
+              <h1 className="md:text-2xl text-center">1982794281</h1>
+
+              <button
+                className="flex items-center gap-2 bg-pink-500 text-white px-5 py-2 rounded-lg"
+                onClick={() => {
+                  copy('1982794281');
+                  setCopied1(true);
+                }}
+              >
+                {copied1 ? (
+                  <span className="font-light">&#10003; Tersalin</span>
+                ) : (
+                  <>
+                    <Image
+                      src="/copas.svg"
+                      width={300}
+                      height={300}
+                      alt="copas"
+                      className="w-5 h-auto"
+                    />{' '}
                     Salin No. Rekening
                   </>
                 )}
@@ -77,18 +127,17 @@ export default function RekeningScreen() {
               <h1 className="text-2xl md:text-3xl font-light">Kirim Kado</h1>
 
               <p className="md:text-2xl font-light text-center text-sm">
-                Alamat: Simomulyo Baru 05-E/17, Kelurahan Simomulyo Baru,
-                Kecamatan Sukomanunggal, Surabaya, 60281
+                Alamat: Jl. Mujahidin RT.19 RW.04 Damarsi Buduran Sidoarjo 61252
               </p>
               <p className="md:text-2xl font-light text-center">
-                Penerima: Dayat
+                Penerima: Rizky Arika Rahmadhani
               </p>
 
               <button
                 className="flex items-center gap-2 bg-pink-500 text-white px-5 py-2 rounded-lg"
                 onClick={() => {
                   copy(
-                    " Simomulyo Baru 05-E/17, Kelurahan Simomulyo Baru, Kecamatan Sukomanunggal, Surabaya, 60281"
+                    'Jl. Mujahidin RT.19 RW.04 Damarsi Buduran Sidoarjo 61252'
                   );
                   setAlamat(true);
                 }}
@@ -97,7 +146,13 @@ export default function RekeningScreen() {
                   <span className="font-light">&#10003; Tersalin</span>
                 ) : (
                   <>
-                    <Image src={copas} alt="copas" className="w-5 h-auto" />{" "}
+                    <Image
+                      src="/copas.svg"
+                      width={300}
+                      height={300}
+                      alt="copas"
+                      className="w-5 h-auto"
+                    />{' '}
                     Salin Alamat
                   </>
                 )}
@@ -108,7 +163,9 @@ export default function RekeningScreen() {
 
         <Fade direction="up">
           <Image
-            src={bottom}
+            src="/bottom.svg"
+            width={300}
+            height={300}
             alt="bottom"
             className="w-[150px] md:w-[300px] mt-5 h-auto"
           />

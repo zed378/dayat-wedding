@@ -1,11 +1,12 @@
-import Image from "next/image";
-import top from "../../../public/top.svg";
+import Image from 'next/image';
 
 export function Qutoes1() {
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center px-5 italic relative z-10">
       <Image
-        src={top}
+        src="/top.svg"
+        width={300}
+        height={300}
         alt="top"
         className="w-[150px] md:w-[300px] mb-10 h-auto"
       />
@@ -20,7 +21,9 @@ export function Qutoes1() {
         <p className="text-center">~QS. Ar-Rum Ayat 21~</p>
       </div>
       <Image
-        src={top}
+        src="/top.svg"
+        width={300}
+        height={300}
         alt="top"
         className="w-[150px] md:w-[300px] mt-10 h-auto rotate-180"
       />
@@ -32,7 +35,9 @@ export function Qutoes2() {
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center px-5 italic relative z-10">
       <Image
-        src={top}
+        src="/top.svg"
+        width={300}
+        height={300}
         alt="top"
         className="w-[150px] md:w-[300px] mb-10 h-auto"
       />
@@ -42,9 +47,11 @@ export function Qutoes2() {
           mengingat kebesaran Allah.
         </p>
         <p className="text-center">~QS Az-Zariyat 49~</p>
-      </div>{" "}
+      </div>{' '}
       <Image
-        src={top}
+        src="/top.svg"
+        width={300}
+        height={300}
         alt="top"
         className="w-[150px] md:w-[300px] mt-10 h-auto rotate-180"
       />
@@ -56,7 +63,9 @@ export function Qutoes3() {
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center px-5 italic relative z-10">
       <Image
-        src={top}
+        src="/top.svg"
+        width={300}
+        height={300}
         alt="top"
         className="w-[150px] md:w-[300px] mb-10 h-auto"
       />
@@ -67,9 +76,11 @@ export function Qutoes3() {
           (isteri-isterimu) telah mengambil dari kamu perjanjian yang kuat.
         </p>
         <p className="text-center">~QS An-Nisa 21~</p>
-      </div>{" "}
+      </div>{' '}
       <Image
-        src={top}
+        src="/top.svg"
+        width={300}
+        height={300}
         alt="top"
         className="w-[150px] md:w-[300px] mt-10 h-auto rotate-180"
       />
@@ -81,7 +92,9 @@ export function Qutoes4() {
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center px-5 italic relative z-10">
       <Image
-        src={top}
+        src="/top.svg"
+        width={300}
+        height={300}
         alt="top"
         className="w-[150px] md:w-[300px] mb-10 h-auto"
       />
@@ -91,9 +104,11 @@ export function Qutoes4() {
           menikahlah dengan perempuan-perempuan merdeka.
         </p>
         <p className="text-center">~HR Ibnu Majah~</p>
-      </div>{" "}
+      </div>{' '}
       <Image
-        src={top}
+        src="/top.svg"
+        width={300}
+        height={300}
         alt="top"
         className="w-[150px] md:w-[300px] mt-10 h-auto rotate-180"
       />
@@ -105,7 +120,9 @@ export function Qutoes5() {
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center px-5 italic relative z-10">
       <Image
-        src={top}
+        src="/top.svg"
+        width={300}
+        height={300}
         alt="top"
         className="w-[150px] md:w-[300px] mb-10 h-auto"
       />
@@ -114,9 +131,11 @@ export function Qutoes5() {
           Siapa yang menikah maka sungguh ia telah diberi setengahnya ibadah.
         </p>
         <p className="text-center">~HR Abu Ya&rsquo;la~</p>
-      </div>{" "}
+      </div>{' '}
       <Image
-        src={top}
+        src="/top.svg"
+        width={300}
+        height={300}
         alt="top"
         className="w-[150px] md:w-[300px] mt-10 h-auto rotate-180"
       />

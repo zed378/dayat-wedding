@@ -1,8 +1,5 @@
-import Image from "next/image";
-import { Zoom, Slide, Fade } from "react-awesome-reveal";
-
-import top from "../../../public/top.svg";
-import bottom from "../../../public/bottom.svg";
+import Image from 'next/image';
+import { Zoom, Slide, Fade } from 'react-awesome-reveal';
 
 export default function OpeningThanks({ name }) {
   return (
@@ -10,7 +7,9 @@ export default function OpeningThanks({ name }) {
       <div className="w-full h-full rounded-lg flex flex-col items-center justify-center bg-[#ffffff70] md:px-10 gap-2 relative z-10">
         <Fade direction="down" cascade>
           <Image
-            src={top}
+            src="/top.svg"
+            width={300}
+            height={300}
             alt="top"
             className="w-[150px] md:w-[300px] mb-10 h-auto"
           />
@@ -18,7 +17,7 @@ export default function OpeningThanks({ name }) {
             Kepada Yth. <br /> Bapak/Ibu/Saudara/i:
           </h1>
           <h1 className="capitalize satisfy text-3xl md:text-[3rem] my-5 font-black text-pink-500 text-center px-4">
-            {name}
+            {name ? name : 'Fulan/Fulanah'}
           </h1>
         </Fade>
 
@@ -45,7 +44,9 @@ export default function OpeningThanks({ name }) {
           </div>
 
           <Image
-            src={bottom}
+            src="/bottom.svg"
+            width={300}
+            height={300}
             alt="bottom"
             className="w-[150px] md:w-[300px] mt-10 h-auto"
           />

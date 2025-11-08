@@ -5,7 +5,7 @@ import { Fade, Slide, Zoom } from 'react-awesome-reveal';
 import { ResepsiCountDown } from '../atoms/countDown';
 
 export default function ResepsiScreen() {
-  const resepsi = new Date('Jan 17, 2026 15:00');
+  const resepsi = new Date('Jan 18, 2026 15:00');
 
   return (
     <div className="w-full h-screen relative flex flex-col justify-center items-center">
@@ -41,10 +41,10 @@ export default function ResepsiScreen() {
         <div className="text-center text-pink-500 mb-6">
           <Fade direction="up" cascade>
             <p className="md:text-2xl 2xl:text-4xl mb-2">
-              Resepsi akan dilaksanakan pada:
+              Unduh mantu akan dilaksanakan pada:
             </p>
             <p className="text-xl md:text-[2rem] font-bold mb-2">
-              Sabtu, 17 Januari 2026
+              Minggu, 18 Januari 2026
             </p>
             <p className="text-xl md:text-[2rem]">
               Pukul 15.00 WIB s.d. selesai

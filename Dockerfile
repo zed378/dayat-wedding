@@ -1,4 +1,4 @@
-FROM node:18-alpine AS base
+FROM node:24-alpine AS base
 
 # Install dependencies only when needed
 FROM base AS deps
@@ -57,4 +57,3 @@ EXPOSE 3001
 ENV PORT 3001
 
 CMD ["node", "server.js"]
-

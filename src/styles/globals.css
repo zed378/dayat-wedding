@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: pacifico;
-  src: url("./Pacifico-Regular.ttf");
+  src: url('./Pacifico-Regular.ttf');
 }
 
 @font-face {
   font-family: satisfy;
-  src: url("./DancingScript-VariableFont_wght.ttf");
+  src: url('./DancingScript-VariableFont_wght.ttf');
 }
 
 * {
@@ -47,14 +47,14 @@ body {
 }
 
 .opening {
-  background-image: url("../../public/bg.jpg");
+  background-image: url('../../public/bg1.webp');
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .akad {
-  background-image: url("../../public/bg.webp");
+  background-image: url('../../public/bg.webp');
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
